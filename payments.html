@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay Consular Fees | Bahamian Consulate General, Kingston</title>
+  <meta name="description" content="Pay consular fees online for passport applications, notarial services, and other consular services provided by the Consulate General of The Bahamas in Kingston, Jamaica.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="subpage">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/coat_of_arms.webp" alt="Coat of Arms of The Bahamas" class="nav-crest" width="38" height="38">
+        <div class="nav-brand-text">
+          <span class="nav-title">Bahamian Consulate General</span>
+          <span class="nav-subtitle">Kingston, Jamaica</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="services.html">Services</a>
+        <a href="visas.html">Visas &amp; Travel</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="bahamas.html">The Bahamas</a>
+        <a href="payments.html">Pay Fees</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+      <a href="services.html">Services</a>
+      <a href="visas.html">Visas &amp; Travel</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="bahamas.html">The Bahamas</a>
+      <a href="payments.html">Pay Fees</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu-contact">
+      <p>WhatsApp: +1 (876) 436-8768</p>
+      <p>Alvetaknight@bahamas.gov.bs</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <span class="overline">Consulate General</span>
+        <h1>Pay Consular Fees</h1>
+        <p class="page-header-subtitle">Secure online payment for consular services</p>
+      </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+        <span aria-current="page">Pay Fees</span>
+      </div>
+    </nav>
+
+    <!-- Fee Schedule -->
+    <section class="section-padding reveal">
+      <div class="container">
+        <h2>Fee Schedule</h2>
+        <p>Please review the applicable fees below before proceeding to payment.</p>
+        <div class="fee-table-wrapper">
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Fee (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Passport Application (New)</td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>Passport Renewal</td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>Emergency Travel Document</td>
+                <td>$75.00</td>
+              </tr>
+              <tr>
+                <td>Notarial Services (per document)</td>
+                <td>$25.00</td>
+              </tr>
+              <tr>
+                <td>Affidavit / Statutory Declaration</td>
+                <td>$25.00</td>
+              </tr>
+              <tr>
+                <td>Document Authentication</td>
+                <td>$30.00</td>
+              </tr>
+              <tr>
+                <td>Certified Copy</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td>Power of Attorney</td>
+                <td>$35.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment Form -->
+    <section class="payment-section reveal">
+      <div class="payments-section">
+        <div class="payments-inner">
+          <div class="payments-reference">
+            <h2>Make a Payment</h2>
+            <form class="payment-form" id="payment-form">
+
+              <!-- Service Selection -->
+              <div class="form-group">
+                <label for="service-select">Service</label>
+                <select id="service-select" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <option value="passport-new" data-price="50.00">Passport Application (New) &mdash; $50.00</option>
+                  <option value="passport-renewal" data-price="50.00">Passport Renewal &mdash; $50.00</option>
+                  <option value="emergency-travel" data-price="75.00">Emergency Travel Document &mdash; $75.00</option>
+                  <option value="notarial" data-price="25.00">Notarial Services &mdash; $25.00</option>
+                  <option value="affidavit" data-price="25.00">Affidavit / Statutory Declaration &mdash; $25.00</option>
+                  <option value="authentication" data-price="30.00">Document Authentication &mdash; $30.00</option>
+                  <option value="certified-copy" data-price="15.00">Certified Copy &mdash; $15.00</option>
+                  <option value="power-of-attorney" data-price="35.00">Power of Attorney &mdash; $35.00</option>
+                </select>
+              </div>
+
+              <!-- Amount Display -->
+              <div class="payment-amount-display">
+                <p class="amount-label">Amount Due</p>
+                <p class="amount-value" id="payment-amount-display">$0.00</p>
+              </div>
+
+              <!-- Card Logos -->
+              <div class="card-brands">
+                <span class="card-brand-logo">VISA</span>
+                <span class="card-brand-logo">MC</span>
+                <span class="card-brand-logo">AMEX</span>
+              </div>
+
+              <!-- Cardholder Details -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cardholder-name">Full Name on Card</label>
+                  <input type="text" id="cardholder-name" name="cardholder-name" required autocomplete="cc-name">
+                </div>
+                <div class="form-group">
+                  <label for="cardholder-email">Email Address</label>
+                  <input type="email" id="cardholder-email" name="cardholder-email" required autocomplete="email">
+                </div>
+              </div>
+
+              <!-- Card Details -->
+              <div class="card-input-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required autocomplete="cc-number" inputmode="numeric">
+              </div>
+              <div class="card-row">
+                <div class="card-input-group">
+                  <label for="card-expiry">Expiry Date</label>
+                  <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" maxlength="5" required autocomplete="cc-exp" inputmode="numeric">
+                </div>
+                <div class="card-input-group">
+                  <label for="card-cvv">CVV</label>
+                  <input type="text" id="card-cvv" name="card-cvv" placeholder="123" maxlength="4" required autocomplete="cc-csc" inputmode="numeric">
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:var(--space-8);">Pay Now</button>
+
+              <!-- Security Note -->
+              <p style="font-size:var(--text-small);color:var(--text-light);margin-top:var(--space-6);text-align:center;">Your payment information is processed securely. The Consulate General does not store card details.</p>
+
+            </form>
+          </div>
+
+          <div class="payment-form-section">
+            <!-- Payment Assistance -->
+            <div class="payment-fallback" style="border-left-color:var(--gold-muted);background:var(--gold-wash);">
+              <h5 style="color:var(--gold-muted);">Need Assistance?</h5>
+              <p>Need assistance with your payment? Contact the Consulate directly:</p>
+              <p style="margin-top:var(--space-3);">WhatsApp: <a href="https://wa.me/18764368768">+1 (876) 436-8768</a></p>
+              <p>Email: <a href="mailto:Alvetaknight@bahamas.gov.bs">Alvetaknight@bahamas.gov.bs</a></p>
+              <p style="margin-top:var(--space-3);">In-person payments may be arranged during your appointment.</p>
+            </div>
+
+            <!-- Receipt Info -->
+            <div style="margin-top:var(--space-8);">
+              <h4>Receipt Information</h4>
+              <p>Upon successful payment, a confirmation receipt will be sent to your email address. Please retain this receipt for your records and present it at your appointment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="assets/coat_of_arms.webp" alt="Coat of Arms of The Bahamas" class="footer-crest" width="52" height="52">
+          <p class="footer-title">Consulate General</p>
+          <p class="footer-subtitle">Commonwealth of The Bahamas<br><span style="color: var(--jm-green)">Kingston, Jamaica</span></p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Contact</h3>
+          <address class="footer-address">
+            2-4 Gladstone Drive<br>Kingston, Jamaica<br><br>
+            WhatsApp: +1 (876) 436-8768<br>
+            <a href="mailto:Alvetaknight@bahamas.gov.bs">Alvetaknight@bahamas.gov.bs</a>
+          </address>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="services.html">Consular Services</a>
+            <a href="visas.html">Visa &amp; Travel</a>
+            <a href="about.html">About the Mission</a>
+            <a href="news.html">News &amp; Events</a>
+            <a href="payments.html">Pay Fees</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Official Resources</h3>
+          <nav class="footer-nav">
+            <a href="https://mofa.gov.bs" target="_blank" rel="noopener">MOFA Bahamas</a>
+            <a href="https://www.bahamas.gov.bs" target="_blank" rel="noopener">Government of The Bahamas</a>
+            <a href="https://www.immigration.gov.bs" target="_blank" rel="noopener">Bahamas Immigration</a>
+            <a href="bahamas.html">About The Bahamas</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Consulate General of the Commonwealth of The Bahamas in Kingston. All rights reserved.</p>
+        <p>A mission of the Ministry of Foreign Affairs, The Bahamas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
