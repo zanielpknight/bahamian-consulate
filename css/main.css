@@ -1071,12 +1071,14 @@ body::after {
    16. BILATERAL RIBBON
    ------------------------------------------------------------ */
 
+.bilateral,
 .bilateral-ribbon {
   background: var(--navy);
   padding: var(--space-12) var(--space-6);
   text-align: center;
 }
 
+.bilateral-inner,
 .bilateral-ribbon-inner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -1099,6 +1101,7 @@ body::after {
   flex-shrink: 0;
 }
 
+.bilateral-text,
 .bilateral-ribbon-text {
   font-family: var(--font-heading);
   font-style: italic;
