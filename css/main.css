@@ -1086,7 +1086,6 @@ body::after {
   align-items: center;
   justify-content: center;
   gap: var(--space-6);
-  flex-wrap: wrap;
 }
 
 .bilateral-ribbon .flag-icon {
@@ -1101,6 +1100,12 @@ body::after {
   flex-shrink: 0;
 }
 
+.bilateral-inner img,
+.bilateral-ribbon-inner img {
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
 .bilateral-text,
 .bilateral-ribbon-text {
   font-family: var(--font-heading);
@@ -1108,6 +1113,7 @@ body::after {
   font-size: clamp(18px, 2.5vw, 24px);
   color: var(--text-on-dark);
   line-height: 1.5;
+  text-align: center;
 }
 
 
