@@ -310,4 +310,35 @@
     });
   }
 
+
+  /* ==========================================================================
+     10. HERO VIDEO — poster only under reduced motion or data saver
+     ========================================================================== */
+
+  var heroVideo = document.querySelector('.hero-video');
+
+  if (heroVideo) {
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var saveData = navigator.connection && navigator.connection.saveData;
+
+    if (reduceMotion || saveData) {
+      // Drop the sources so nothing downloads or plays; the poster stays.
+      var sources = heroVideo.querySelectorAll('source');
+      for (var v = 0; v < sources.length; v++) {
+        heroVideo.removeChild(sources[v]);
+      }
+      heroVideo.removeAttribute('autoplay');
+      heroVideo.removeAttribute('loop');
+      heroVideo.pause();
+      heroVideo.load();
+    } else {
+      // Some browsers block autoplay until a play() call; ignore rejections.
+      var playAttempt = heroVideo.play();
+      if (playAttempt && typeof playAttempt.catch === 'function') {
+        playAttempt.catch(function() {});
+      }
+    }
+  }
+
 })();

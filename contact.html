@@ -8,10 +8,11 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aurora.css">
 </head>
-<body class="subpage">
+<body class="subpage header-watermark">
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -27,11 +28,11 @@
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="services.html">Services</a>
-        <a href="visas.html">Visas &amp; Travel</a>
+        <a href="visas.html">Visas &amp; travel</a>
         <a href="about.html">About</a>
         <a href="news.html">News</a>
         <a href="bahamas.html">The Bahamas</a>
-        <a href="payments.html">Pay Fees</a>
+        <a href="payments.html">Pay fees</a>
         <a href="contact.html">Contact</a>
       </nav>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -46,16 +47,16 @@
   <div class="mobile-menu" id="mobile-menu">
     <nav class="mobile-menu-nav" aria-label="Mobile navigation">
       <a href="services.html">Services</a>
-      <a href="visas.html">Visas &amp; Travel</a>
+      <a href="visas.html">Visas &amp; travel</a>
       <a href="about.html">About</a>
       <a href="news.html">News</a>
       <a href="bahamas.html">The Bahamas</a>
-      <a href="payments.html">Pay Fees</a>
+      <a href="payments.html">Pay fees</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="mobile-menu-contact">
-      <p>WhatsApp: +1 (876) 436-8768</p>
-      <p>Alvetaknight@bahamas.gov.bs</p>
+      <p>WhatsApp: [Phone number]</p>
+      <p>[Email address]</p>
     </div>
   </div>
 
@@ -87,23 +88,23 @@
 
         <address>
           <strong>Consulate General of the Commonwealth of The Bahamas</strong><br>
-          2-4 Gladstone Drive<br>
-          Kingston, Jamaica
+          [Street address]<br>
+          [City, Country]
         </address>
 
-        <div class="whatsapp-block">
+        <div class="whatsapp-block aurora-card">
           <span class="whatsapp-label">WhatsApp</span>
-          <a href="https://wa.me/18764368768">+1 (876) 436-8768</a>
+          <a href="https://wa.me/18760000000">[Phone number]</a>
         </div>
 
         <div class="contact-email">
           <strong>Email</strong><br>
-          <a href="mailto:Alvetaknight@bahamas.gov.bs">Alvetaknight@bahamas.gov.bs</a>
+          <a href="mailto:consulate@example.com">[Email address]</a>
         </div>
 
         <div class="contact-hours">
           <strong>Hours</strong><br>
-          Monday &ndash; Friday: By Appointment Only<br>
+          Monday &ndash; Friday: By appointment only<br>
           Saturday &ndash; Sunday: Closed<br><br>
           <em>The Consulate observes both Bahamian and Jamaican public holidays.</em>
         </div>
@@ -111,16 +112,7 @@
 
       <div class="contact-map">
         <div class="map-container" style="aspect-ratio: 16/10;">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.5!2d-76.78!3d18.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDAxJzAwLjAiTiA3NsKwNDcnMDAuMCJX!5e0!3m2!1sen!2sjm!4v1"
-            title="Consulate location map"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <div class="map-placeholder">[Map embed: consulate location]</div>
         </div>
       </div>
     </section>
@@ -133,22 +125,22 @@
       <form class="appointment-form" id="appointment-form">
         <div class="form-row">
           <div class="form-group">
-            <label for="full-name">Full Name</label>
+            <label for="full-name">Full name</label>
             <input type="text" id="full-name" name="full-name" required>
           </div>
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email">Email address</label>
             <input type="email" id="email" name="email" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label for="phone">Phone Number</label>
+            <label for="phone">Phone number</label>
             <input type="tel" id="phone" name="phone" required>
           </div>
           <div class="form-group">
-            <label for="contact-method">Preferred Contact Method</label>
+            <label for="contact-method">Preferred contact method</label>
             <select id="contact-method" name="contact-method">
               <option value="email">Email</option>
               <option value="whatsapp">WhatsApp</option>
@@ -159,7 +151,7 @@
 
         <div class="form-row">
           <div class="form-group">
-            <label for="service">Service Required</label>
+            <label for="service">Service required</label>
             <select id="service" name="service">
               <option value="passport-application">Passport Application</option>
               <option value="passport-renewal">Passport Renewal</option>
@@ -171,19 +163,19 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="preferred-date">Preferred Date</label>
+            <label for="preferred-date">Preferred date</label>
             <input type="date" id="preferred-date" name="preferred-date">
           </div>
         </div>
 
         <div class="form-row form-row--full">
           <div class="form-group">
-            <label for="additional-info">Additional Information</label>
+            <label for="additional-info">Additional information</label>
             <textarea id="additional-info" name="additional-info" rows="4"></textarea>
           </div>
         </div>
 
-        <button type="submit" class="btn-primary">Request Appointment</button>
+        <button type="submit" class="btn-primary">Request appointment</button>
       </form>
     </section>
 
@@ -192,9 +184,9 @@
       <h2>Emergency Assistance</h2>
       <p>For after-hours emergencies involving Bahamian nationals in Jamaica, please contact:</p>
       <ul>
-        <li>Consulate Emergency WhatsApp: <a href="https://wa.me/18764368768">+1 (876) 436-8768</a></li>
-        <li>Ministry of Foreign Affairs (Nassau): <a href="tel:+12423565956">+1 (242) 356-5956</a></li>
-        <li>MOFA After-Hours Emergency: <a href="tel:+12428273106">+1 (242) 827-3106</a></li>
+        <li>Consulate Emergency WhatsApp: <a href="https://wa.me/18760000000">[Phone number]</a></li>
+        <li>Ministry of Foreign Affairs (Nassau): <a href="tel:+12420000000">[Ministry phone number]</a></li>
+        <li>MOFA After-Hours Emergency: <a href="tel:+12420000000">[Ministry phone number]</a></li>
       </ul>
       <p>For life-threatening emergencies, always call Jamaica's emergency services at <strong>119</strong> (police) or <strong>110</strong> (fire/ambulance) first.</p>
     </section>
@@ -202,7 +194,7 @@
     <!-- For Jamaican Nationals -->
     <section class="jamaican-info">
       <h2>For Jamaican Nationals</h2>
-      <p>Jamaican nationals seeking information about travelling to The Bahamas can visit our <a href="visas.html">Visa &amp; Travel</a> page. No visa is required for stays up to three months.</p>
+      <p>Jamaican nationals seeking information about travelling to The Bahamas can visit our <a href="visas.html">Visa &amp; travel</a> page. No visa is required for stays up to three months.</p>
       <p>For Jamaican consular services, please contact the <a href="https://mfaft.gov.jm" target="_blank" rel="noopener">Ministry of Foreign Affairs and Foreign Trade of Jamaica</a>.</p>
     </section>
 
@@ -220,27 +212,27 @@
         <div class="footer-col">
           <h3 class="footer-heading">Contact</h3>
           <address class="footer-address">
-            2-4 Gladstone Drive<br>Kingston, Jamaica<br><br>
-            WhatsApp: +1 (876) 436-8768<br>
-            <a href="mailto:Alvetaknight@bahamas.gov.bs">Alvetaknight@bahamas.gov.bs</a>
+            [Street address]<br>[City, Country]<br><br>
+            WhatsApp: [Phone number]<br>
+            <a href="mailto:consulate@example.com">[Email address]</a>
           </address>
         </div>
         <div class="footer-col">
-          <h3 class="footer-heading">Quick Links</h3>
+          <h3 class="footer-heading">Quick links</h3>
           <nav class="footer-nav" aria-label="Footer navigation">
-            <a href="services.html">Consular Services</a>
-            <a href="visas.html">Visa &amp; Travel</a>
-            <a href="about.html">About the Mission</a>
-            <a href="news.html">News &amp; Events</a>
-            <a href="payments.html">Pay Fees</a>
+            <a href="services.html">Consular services</a>
+            <a href="visas.html">Visa &amp; travel</a>
+            <a href="about.html">About the mission</a>
+            <a href="news.html">News &amp; events</a>
+            <a href="payments.html">Pay fees</a>
             <a href="contact.html">Contact</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h3 class="footer-heading">Official Resources</h3>
+          <h3 class="footer-heading">Official resources</h3>
           <nav class="footer-nav">
             <a href="https://mofa.gov.bs" target="_blank" rel="noopener">MOFA Bahamas</a>
-            <a href="https://www.bahamas.gov.bs" target="_blank" rel="noopener">Government of The Bahamas</a>
+            <a href="https://opm.gov.bs" target="_blank" rel="noopener">Government of The Bahamas</a>
             <a href="https://www.immigration.gov.bs" target="_blank" rel="noopener">Bahamas Immigration</a>
             <a href="bahamas.html">About The Bahamas</a>
           </nav>
@@ -249,6 +241,7 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Consulate General of the Commonwealth of The Bahamas in Kingston. All rights reserved.</p>
         <p>A mission of the Ministry of Foreign Affairs, The Bahamas.</p>
+        <p class="footer-demo-note">Demo site. Names and contact details are placeholders.</p>
       </div>
     </div>
   </footer>

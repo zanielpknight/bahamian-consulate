@@ -8,10 +8,11 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aurora.css">
 </head>
-<body class="subpage">
+<body class="subpage header-aurora">
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -27,11 +28,11 @@
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="services.html">Services</a>
-        <a href="visas.html">Visas &amp; Travel</a>
+        <a href="visas.html">Visas &amp; travel</a>
         <a href="about.html">About</a>
         <a href="news.html">News</a>
         <a href="bahamas.html">The Bahamas</a>
-        <a href="payments.html">Pay Fees</a>
+        <a href="payments.html">Pay fees</a>
         <a href="contact.html">Contact</a>
       </nav>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -46,16 +47,16 @@
   <div class="mobile-menu" id="mobile-menu">
     <nav class="mobile-menu-nav" aria-label="Mobile navigation">
       <a href="services.html">Services</a>
-      <a href="visas.html">Visas &amp; Travel</a>
+      <a href="visas.html">Visas &amp; travel</a>
       <a href="about.html">About</a>
       <a href="news.html">News</a>
       <a href="bahamas.html">The Bahamas</a>
-      <a href="payments.html">Pay Fees</a>
+      <a href="payments.html">Pay fees</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="mobile-menu-contact">
-      <p>WhatsApp: +1 (876) 436-8768</p>
-      <p>Alvetaknight@bahamas.gov.bs</p>
+      <p>WhatsApp: [Phone number]</p>
+      <p>[Email address]</p>
     </div>
   </div>
 
@@ -64,6 +65,7 @@
 
     <!-- Page Header -->
     <section class="page-header">
+      <div class="aurora aurora--cream" aria-hidden="true"></div>
       <div class="container">
         <span class="overline">Consulate General</span>
         <h1>Pay Consular Fees</h1>
@@ -76,7 +78,7 @@
       <div class="container">
         <a href="index.html">Home</a>
         <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
-        <span aria-current="page">Pay Fees</span>
+        <span aria-current="page">Pay fees</span>
       </div>
     </nav>
 
@@ -158,7 +160,7 @@
 
               <!-- Amount Display -->
               <div class="payment-amount-display">
-                <p class="amount-label">Amount Due</p>
+                <p class="amount-label">Amount due</p>
                 <p class="amount-value" id="payment-amount-display">$0.00</p>
               </div>
 
@@ -172,23 +174,23 @@
               <!-- Cardholder Details -->
               <div class="form-row">
                 <div class="form-group">
-                  <label for="cardholder-name">Full Name on Card</label>
+                  <label for="cardholder-name">Full name on card</label>
                   <input type="text" id="cardholder-name" name="cardholder-name" required autocomplete="cc-name">
                 </div>
                 <div class="form-group">
-                  <label for="cardholder-email">Email Address</label>
+                  <label for="cardholder-email">Email address</label>
                   <input type="email" id="cardholder-email" name="cardholder-email" required autocomplete="email">
                 </div>
               </div>
 
               <!-- Card Details -->
               <div class="card-input-group">
-                <label for="card-number">Card Number</label>
+                <label for="card-number">Card number</label>
                 <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required autocomplete="cc-number" inputmode="numeric">
               </div>
               <div class="card-row">
                 <div class="card-input-group">
-                  <label for="card-expiry">Expiry Date</label>
+                  <label for="card-expiry">Expiry date</label>
                   <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" maxlength="5" required autocomplete="cc-exp" inputmode="numeric">
                 </div>
                 <div class="card-input-group">
@@ -198,7 +200,7 @@
               </div>
 
               <!-- Submit -->
-              <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:var(--space-8);">Pay Now</button>
+              <button type="submit" class="btn-primary" style="width:100%;justify-content:center;margin-top:var(--space-8);">Pay now</button>
 
               <!-- Security Note -->
               <p style="font-size:var(--text-small);color:var(--text-light);margin-top:var(--space-6);text-align:center;">Your payment information is processed securely. The Consulate General does not store card details.</p>
@@ -211,8 +213,8 @@
             <div class="payment-fallback" style="border-left-color:var(--gold-muted);background:var(--gold-wash);">
               <h5 style="color:var(--gold-muted);">Need Assistance?</h5>
               <p>Need assistance with your payment? Contact the Consulate directly:</p>
-              <p style="margin-top:var(--space-3);">WhatsApp: <a href="https://wa.me/18764368768">+1 (876) 436-8768</a></p>
-              <p>Email: <a href="mailto:Alvetaknight@bahamas.gov.bs">Alvetaknight@bahamas.gov.bs</a></p>
+              <p style="margin-top:var(--space-3);">WhatsApp: <a href="https://wa.me/18760000000">[Phone number]</a></p>
+              <p>Email: <a href="mailto:consulate@example.com">[Email address]</a></p>
               <p style="margin-top:var(--space-3);">In-person payments may be arranged during your appointment.</p>
             </div>
 
@@ -240,27 +242,27 @@
         <div class="footer-col">
           <h3 class="footer-heading">Contact</h3>
           <address class="footer-address">
-            2-4 Gladstone Drive<br>Kingston, Jamaica<br><br>
-            WhatsApp: +1 (876) 436-8768<br>
-            <a href="mailto:Alvetaknight@bahamas.gov.bs">Alvetaknight@bahamas.gov.bs</a>
+            [Street address]<br>[City, Country]<br><br>
+            WhatsApp: [Phone number]<br>
+            <a href="mailto:consulate@example.com">[Email address]</a>
           </address>
         </div>
         <div class="footer-col">
-          <h3 class="footer-heading">Quick Links</h3>
+          <h3 class="footer-heading">Quick links</h3>
           <nav class="footer-nav" aria-label="Footer navigation">
-            <a href="services.html">Consular Services</a>
-            <a href="visas.html">Visa &amp; Travel</a>
-            <a href="about.html">About the Mission</a>
-            <a href="news.html">News &amp; Events</a>
-            <a href="payments.html">Pay Fees</a>
+            <a href="services.html">Consular services</a>
+            <a href="visas.html">Visa &amp; travel</a>
+            <a href="about.html">About the mission</a>
+            <a href="news.html">News &amp; events</a>
+            <a href="payments.html">Pay fees</a>
             <a href="contact.html">Contact</a>
           </nav>
         </div>
         <div class="footer-col">
-          <h3 class="footer-heading">Official Resources</h3>
+          <h3 class="footer-heading">Official resources</h3>
           <nav class="footer-nav">
             <a href="https://mofa.gov.bs" target="_blank" rel="noopener">MOFA Bahamas</a>
-            <a href="https://www.bahamas.gov.bs" target="_blank" rel="noopener">Government of The Bahamas</a>
+            <a href="https://opm.gov.bs" target="_blank" rel="noopener">Government of The Bahamas</a>
             <a href="https://www.immigration.gov.bs" target="_blank" rel="noopener">Bahamas Immigration</a>
             <a href="bahamas.html">About The Bahamas</a>
           </nav>
@@ -269,6 +271,7 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Consulate General of the Commonwealth of The Bahamas in Kingston. All rights reserved.</p>
         <p>A mission of the Ministry of Foreign Affairs, The Bahamas.</p>
+        <p class="footer-demo-note">Demo site. Names and contact details are placeholders.</p>
       </div>
     </div>
   </footer>
