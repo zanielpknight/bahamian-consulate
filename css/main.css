@@ -857,16 +857,6 @@ body::after {
   margin-top: var(--space-8);
 }
 
-.placeholder-note {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--text-light);
-  margin-top: var(--space-1);
-}
-
 
 /* ------------------------------------------------------------
    15. LATEST NEWS PREVIEW
@@ -3760,15 +3750,60 @@ body::after {
   }
 }
 
-/* Placeholder shown instead of a live map embed on the demo site */
-.map-placeholder {
+/* "Find us" card shown in place of a live map embed */
+.find-us-card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  gap: var(--space-3);
   width: 100%;
   height: 100%;
+  padding: var(--space-8);
   background: var(--cream);
+  color: var(--text-mid);
+  font-size: var(--text-body);
+  text-align: left;
+}
+
+.find-us-card h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--text-subsection);
+  color: var(--navy);
+}
+
+.find-us-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.find-us-address {
+  color: var(--text-dark);
+}
+
+.find-us-hours {
+  font-size: var(--text-small);
   color: var(--text-light);
-  font-size: 15px;
-  border: 1px dashed var(--border-light);
+}
+
+.find-us-link {
+  margin-top: var(--space-2);
+  font-weight: 600;
+  color: var(--aqua-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.find-us-link:hover,
+.find-us-link:focus-visible {
+  color: var(--navy);
+}
+
+@media (max-width: 600px) {
+  .find-us-card {
+    gap: var(--space-2);
+    padding: var(--space-6);
+    font-size: 15px;
+  }
 }
